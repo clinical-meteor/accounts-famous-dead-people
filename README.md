@@ -37,3 +37,9 @@ rachel.carson
 maria.mayer  
 rita.levi.montalcini  
 elizabeth.blackwell  
+
+------------------------
+### License
+
+MIT License. Use as you wish, including for commercial purposes.  
+See license.mit.txt for full details.  
