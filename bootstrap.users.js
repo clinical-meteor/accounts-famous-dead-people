@@ -4,7 +4,7 @@
 
 Meteor.startup(function () {
     if (Meteor.users.find().count() === 0) {
-        log_event('no users in database!  adding some default users', LogLevel.Info, this);
+        console.info('no users in database!  adding some default users');
 
         var userId = null;
 
@@ -19,7 +19,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/ada.lovelace.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'alan',
@@ -31,7 +31,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/alan.turing.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'alexis',
@@ -43,7 +43,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/alexis.carrel.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'doisy',
@@ -55,7 +55,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/edward.doisy.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'tatum',
@@ -67,7 +67,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/edward.tatum.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'florence',
@@ -79,7 +79,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/florence.nightingale.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'galen',
@@ -91,7 +91,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/galen.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'george',
@@ -103,7 +103,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/george.beadle.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'wald',
@@ -115,7 +115,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/george.wald.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'carver',
@@ -127,7 +127,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/george.washington.carver.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'hermann',
@@ -139,7 +139,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/hermann.muller.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'hygea',
@@ -151,7 +151,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/hygea.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'james',
@@ -163,7 +163,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/james.watson.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'eccles',
@@ -175,7 +175,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/john.eccles.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'kurt',
@@ -187,7 +187,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/kurt.vonnegut.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'curie',
@@ -199,7 +199,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/madam.curie.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'mary',
@@ -211,7 +211,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/mary.shelley.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'teresa',
@@ -223,7 +223,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/mother.teresa.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'octavia',
@@ -235,7 +235,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/octavia.butler.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'samuel',
@@ -247,7 +247,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/samuel.clemens.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'rosalind',
@@ -259,7 +259,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/rosalind.franklin.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
 
         userId = Accounts.createUser({
@@ -272,7 +272,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/nicola.tesla.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'grace',
@@ -284,7 +284,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/grace.hopper.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
 
         userId = Accounts.createUser({
@@ -297,7 +297,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/carl.gauss.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
 
         userId = Accounts.createUser({
@@ -310,7 +310,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/claude.shannon.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'barbara',
@@ -322,7 +322,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/barbara.mcclintock.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
 
         userId = Accounts.createUser({
@@ -335,7 +335,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/gertrude.elion.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'rachel',
@@ -347,7 +347,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/rachel.carson.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'maria',
@@ -359,7 +359,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/maria.mayer.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'rita',
@@ -371,7 +371,7 @@ Meteor.startup(function () {
                 avatar: '/avatars/rita.levi.montalcini.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
+        console.info('Account created: ' + userId);
 
         userId = Accounts.createUser({
             username: 'elizabeth',
@@ -383,8 +383,6 @@ Meteor.startup(function () {
                 avatar: '/avatars/elizabeth.blackwell.jpg'
             }
         });
-        log_event('Account created: ' + userId, LogLevel.Info, this);
-
-
+        console.info('Account created: ' + userId);
     }
 });
