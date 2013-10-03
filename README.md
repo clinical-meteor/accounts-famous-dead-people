@@ -62,30 +62,30 @@ Edward Tatum
 Florence Nightingale  
 Galen  
 George Beadle  
-george.wald  
-george.washington.carver  
-hermann.muller  
-hygea  
-james.watson  
-john.eccles  
-kurt.vonnegut  
-madam.curie  
-mary.shelley  
-mother.teresa  
-octavia.butler  
-roger.sperry  
-samuel.clemens  
-rosalind.franklin  
-nicola.tesla  
-grace.hopper  
-carl.gauss  
-claude.shannon  
-barbara.mcclintock  
-gertrude.elion  
-rachel.carson  
-maria.mayer  
-rita.levi.montalcini  
-elizabeth.blackwell  
+George Wald  
+George Washington Carver  
+Hermann Muller  
+Hygea  
+James Watson  
+John Eccles  
+Kurt Vonnegut  
+Madam Curie  
+Mary Shelley  
+Mother Teresa  
+Octavia Butler  
+Roger Sperry  
+Samuel Clemens  
+Rosalind Franklin  
+Nicola Tesla  
+Grace Hopper  
+Carl Gauss  
+Claude Shannon  
+Barbara Mcclintock  
+Gertrude Elion  
+Rachel Carson  
+Maria Mayer  
+Rita Levi Montalcini  
+Elizabeth Blackwell  
 
 ------------------------
 ### License
