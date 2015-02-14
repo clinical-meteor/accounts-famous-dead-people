@@ -16,6 +16,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Ada Lovelace',
                 role: 'Administrator',
+                gender: "Female",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/ada.lovelace.jpg'
             }
         });
@@ -28,6 +29,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Alan Turing',
                 role: 'Programmer',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/alan.turing.jpg'
             }
         });
@@ -40,6 +42,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Alexis Carrel',
                 role: 'Surgeon',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/alexis.carrel.jpg'
             }
         });
@@ -52,6 +55,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Edward Doisy',
                 role: 'Chemist',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/edward.doisy.jpg'
             }
         });
@@ -64,6 +68,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Edward Tatum',
                 role: 'Chemist',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/edward.tatum.jpg'
             }
         });
@@ -76,6 +81,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Florence Nightingale',
                 role: 'Nurse',
+                gender: "Female",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/florence.nightingale.jpg'
             }
         });
@@ -88,6 +94,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Galen',
                 role: 'Physician',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/galen.jpg'
             }
         });
@@ -100,6 +107,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'George Beadle',
                 role: 'Geneticist',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/george.beadle.jpg'
             }
         });
@@ -112,6 +120,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'George Wald',
                 role: 'Opthamologist',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/george.wald.jpg'
             }
         });
@@ -124,6 +133,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'George Washington Carver',
                 role: 'Laboratory Chemist',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/george.washington.carver.jpg'
             }
         });
@@ -136,6 +146,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Hermann Muller',
                 role: 'Radiation Technologist',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/hermann.muller.jpg'
             }
         });
@@ -148,6 +159,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Hygea',
                 role: 'Scrub Nurse',
+                gender: "Female",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/hygea.jpg'
             }
         });
@@ -160,6 +172,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'James Watson',
                 role: 'Geneticist',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/james.watson.jpg'
             }
         });
@@ -172,6 +185,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Sir John Eccles',
                 role: 'Neurologist',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/john.eccles.jpg'
             }
         });
@@ -184,6 +198,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Kurt Vonnegut',
                 role: 'Patient',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/kurt.vonnegut.jpg'
             }
         });
@@ -196,6 +211,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Madam Curie',
                 role: 'Nuclear Physicist',
+                gender: "Female",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/madam.curie.jpg'
             }
         });
@@ -208,6 +224,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Mary Shelley',
                 role: 'Patient',
+                gender: "Female",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/mary.shelley.jpg'
             }
         });
@@ -220,6 +237,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Mother Teresa',
                 role: 'Nurse',
+                gender: "Female",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/mother.teresa.jpg'
             }
         });
@@ -232,6 +250,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Octavia Butler',
                 role: 'Patient',
+                gender: "Female",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/octavia.butler.jpg'
             }
         });
@@ -244,6 +263,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Samuel Clemens',
                 role: 'Patient',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/samuel.clemens.jpg'
             }
         });
@@ -256,6 +276,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Rosalind Franklin',
                 role: 'Laboratory Administrator',
+                gender: "Female",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/rosalind.franklin.jpg'
             }
         });
@@ -269,6 +290,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Nicola Tesla',
                 role: 'Electrical Engineer',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/nicola.tesla.jpg'
             }
         });
@@ -281,6 +303,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Grace Hopper',
                 role: 'Administrator',
+                gender: "Female",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/grace.hopper.jpg'
             }
         });
@@ -294,6 +317,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Carl Gauss',
                 role: 'MRI Researcher',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/carl.gauss.jpg'
             }
         });
@@ -307,6 +331,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Claude Shannon',
                 role: 'Electrical Engineer',
+                gender: "Male",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/claude.shannon.jpg'
             }
         });
@@ -319,6 +344,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Barbara McClintock',
                 role: 'Cytogeneticist',
+                gender: "Female",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/barbara.mcclintock.jpg'
             }
         });
@@ -332,6 +358,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Gertrude Elion',
                 role: 'Pharmacologist',
+                gender: "Female",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/gertrude.elion.jpg'
             }
         });
@@ -344,6 +371,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Rachel Carson',
                 role: 'Patient',
+                gender: "Female",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/rachel.carson.jpg'
             }
         });
@@ -356,6 +384,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Maria Mayer',
                 role: 'Nuclear Physicist',
+                gender: "Female",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/maria.mayer.jpg'
             }
         });
@@ -368,6 +397,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Rita Levi-Montalcini',
                 role: 'Neurologist',
+                gender: "Female",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/rita.levi.montalcini.jpg'
             }
         });
@@ -380,6 +410,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Elizabeth Blackwell',
                 role: 'Physician',
+                gender: "Female",
                 avatar: '/packages/clinical_accounts-famous-dead-people/avatars/elizabeth.blackwell.jpg'
             }
         });
