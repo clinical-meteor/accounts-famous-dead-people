@@ -2,7 +2,7 @@ Package.describe({
   summary: "Adds famous dead people to the Meteor.users collection.",
 
   // update this value before you run 'meteor publish'
-  version: "1.0.2",
+  version: "1.0.3",
 
   // if this value isn't set, meteor will default to the directory name
   name: "clinical:accounts-famous-dead-people",
