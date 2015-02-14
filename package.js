@@ -12,6 +12,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
+  api.versionsFrom('1.0.3.1');
 
   api.use('accounts-base@1.1.3');
   api.use('accounts-password@1.0.5');
