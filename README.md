@@ -1,6 +1,8 @@
 **accounts-famous-dead-people** is a Meteorite package to populate your Meteor.users() collection with famous dead people.  
 
 
+![screenshot](https://raw.githubusercontent.com/awatson1978/accounts-famous-dead-people/master/screenshot.png)  
+
 ------------------------
 ### Installation
 
