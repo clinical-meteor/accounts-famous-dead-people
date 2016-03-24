@@ -8,8 +8,15 @@
 
 First, install the accounts-famous-dead-people package from the command line, like so:
 
-````
+````bash
+# to add famous dead people to your application
 meteor add clinical:accounts-famous-dead-people
+
+# to initialize famous dead people
+INITIALIZE=true meteor 
+
+# to initialize famous dead people using the HL7 FHIR Patient Resource
+INITIALIZE=true Patients=true meteor
 ````
 
 
@@ -103,5 +110,6 @@ if (Meteor.isServer) {
 ------------------------
 ### License
 
-Code is MIT License. Use as you wish, including for commercial purposes.  
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 Images should all be in the public domain.

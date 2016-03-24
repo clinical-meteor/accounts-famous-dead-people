@@ -2,7 +2,7 @@ Package.describe({
   summary: "Adds famous dead people to the Meteor.users collection.",
 
   // update this value before you run 'meteor publish'
-  version: "1.2.2",
+  version: "1.3.0",
 
   // if this value isn't set, meteor will default to the directory name
   name: "clinical:accounts-famous-dead-people",
@@ -16,8 +16,6 @@ Package.on_use(function (api) {
 
   api.use('accounts-base@1.1.3');
   api.use('accounts-password@1.0.5');
-
-  api.addFiles('initialize.users.js', 'server');
 
   api.addFiles('avatars/ada.lovelace.jpg', "client", {isAsset: true});
   api.addFiles('avatars/alan.turing.jpg', "client", {isAsset: true});
@@ -53,4 +51,7 @@ Package.on_use(function (api) {
   api.addFiles('avatars/maria.mayer.jpg', "client", {isAsset: true});
   api.addFiles('avatars/rita.levi.montalcini.jpg', "client", {isAsset: true});
   api.addFiles('avatars/elizabeth.blackwell.jpg', "client", {isAsset: true});
+
+  api.addFiles('server/initialize.js', 'server');
+
 });
