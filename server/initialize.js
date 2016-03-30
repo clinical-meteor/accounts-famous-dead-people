@@ -14,9 +14,11 @@ Meteor.startup(function () {
         password: 'ada',
         email: 'ada@test.org',
         profile: {
-          fullName: 'Ada Lovelace',
+          given: 'Ada',
+          family: "Lovelace",
           role: 'Administrator',
           gender: "Female",
+          dateOfBirth: "1815-12-10",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/ada.lovelace.jpg'
         }
           },
@@ -25,9 +27,11 @@ Meteor.startup(function () {
         password: 'alan',
         email: 'alan@test.org',
         profile: {
-          fullName: 'Alan Turing',
+          given: 'Alan',
+          family: "Turing",
           role: 'Programmer',
           gender: "Male",
+          dateOfBirth: "1912-06-23",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/alan.turing.jpg'
         }
           },
@@ -36,9 +40,11 @@ Meteor.startup(function () {
         password: 'alexis',
         email: 'alexis@test.org',
         profile: {
-          fullName: 'Alexis Carrel',
+          given: 'Alexis',
+          family: "Carrel",
           role: 'Surgeon',
           gender: "Male",
+          dateOfBirth: "1873-06-28",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/alexis.carrel.jpg'
         }
           },
@@ -47,9 +53,11 @@ Meteor.startup(function () {
         password: 'doisy',
         email: 'doisy@test.org',
         profile: {
-          fullName: 'Edward Doisy',
+          given: 'Edward',
+          family: "Doisy",
           role: 'Chemist',
           gender: "Male",
+          dateOfBirth: "1893-11-13",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/edward.doisy.jpg'
         }
           },
@@ -58,9 +66,11 @@ Meteor.startup(function () {
         password: 'tatum',
         email: 'tatum@test.org',
         profile: {
-          fullName: 'Edward Tatum',
+          given: 'Edward',
+          family: "Tatum",
           role: 'Chemist',
           gender: "Male",
+          dateOfBirth: "1909-12-14",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/edward.tatum.jpg'
         }
           },
@@ -69,9 +79,11 @@ Meteor.startup(function () {
         password: 'florence',
         email: 'florence@test.org',
         profile: {
-          fullName: 'Florence Nightingale',
+          given: 'Florence',
+          family: "Nightingale",
           role: 'Nurse',
           gender: "Female",
+          dateOfBirth: "1820-05-12",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/florence.nightingale.jpg'
         }
           },
@@ -80,9 +92,11 @@ Meteor.startup(function () {
         password: 'galen',
         email: 'galen@test.org',
         profile: {
-          fullName: 'Galen',
+          given: 'Galen',
+          family: "Aelius",
           role: 'Physician',
           gender: "Male",
+          dateOfBirth: "0130-09-01",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/galen.jpg'
         }
           },
@@ -91,9 +105,11 @@ Meteor.startup(function () {
         password: 'george',
         email: 'george@test.org',
         profile: {
-          fullName: 'George Beadle',
+          given: 'George',
+          family: "Beadle",
           role: 'Geneticist',
           gender: "Male",
+          dateOfBirth: "1903-10-22",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/george.beadle.jpg'
         }
           },
@@ -102,9 +118,11 @@ Meteor.startup(function () {
         password: 'wald',
         email: 'wald@test.org',
         profile: {
-          fullName: 'George Wald',
+          given: 'George',
+          family: "Wald",
           role: 'Opthamologist',
           gender: "Male",
+          dateOfBirth: "1906-11-18",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/george.wald.jpg'
         }
           },
@@ -113,9 +131,11 @@ Meteor.startup(function () {
         password: 'carver',
         email: 'carver@test.org',
         profile: {
-          fullName: 'George Washington Carver',
+          given: 'George Washington',
+          family: "Carver",
           role: 'Laboratory Chemist',
           gender: "Male",
+          dateOfBirth: "1864-01-01",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/george.washington.carver.jpg'
         }
           },
@@ -124,31 +144,25 @@ Meteor.startup(function () {
         password: 'hermann',
         email: 'hermann@test.org',
         profile: {
-          fullName: 'Hermann Muller',
+          given: 'Hermann',
+          family: "Muller",
           role: 'Radiation Technologist',
           gender: "Male",
+          dateOfBirth: "1890-12-21",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/hermann.muller.jpg'
         }
           },
-      {
-        username: 'hygea',
-        password: 'hygea',
-        email: 'hygea@test.org',
-        profile: {
-          fullName: 'Hygea',
-          role: 'Scrub Nurse',
-          gender: "Female",
-          avatar: '/packages/clinical_accounts-famous-dead-people/avatars/hygea.jpg'
-        }
-          },
+
       {
         username: 'james',
         password: 'james',
         email: 'james@test.org',
         profile: {
-          fullName: 'James Watson',
+          given: 'James',
+          family: "Watson",
           role: 'Geneticist',
           gender: "Male",
+          dateOfBirth: "1928-04-06",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/james.watson.jpg'
         }
           },
@@ -157,9 +171,12 @@ Meteor.startup(function () {
         password: 'eccles',
         email: 'eccles@test.org',
         profile: {
-          fullName: 'Sir John Eccles',
+          prefix: 'Sir',
+          given: 'John',
+          family: "Eccles",
           role: 'Neurologist',
           gender: "Male",
+          dateOfBirth: "1903-01-27",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/john.eccles.jpg'
         }
           },
@@ -168,9 +185,11 @@ Meteor.startup(function () {
         password: 'kurt',
         email: 'kurt@test.org',
         profile: {
-          fullName: 'Kurt Vonnegut',
+          given: 'Kurt',
+          family: "Vonnegut",
           role: 'Patient',
           gender: "Male",
+          dateOfBirth: "1922-11-11",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/kurt.vonnegut.jpg'
         }
           },
@@ -179,9 +198,12 @@ Meteor.startup(function () {
         password: 'curie',
         email: 'curie@test.org',
         profile: {
-          fullName: 'Madam Curie',
+          prefix: 'Madam',
+          given: 'Marie',
+          family: "Curie",
           role: 'Nuclear Physicist',
           gender: "Female",
+          dateOfBirth: "1867-11-07",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/madam.curie.jpg'
         }
           },
@@ -190,9 +212,11 @@ Meteor.startup(function () {
         password: 'mary',
         email: 'mary@test.org',
         profile: {
-          fullName: 'Mary Shelley',
+          given: 'Mary',
+          family: "Shelley",
           role: 'Patient',
           gender: "Female",
+          dateOfBirth: "1797-08-30",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/mary.shelley.jpg'
         }
           },
@@ -201,9 +225,12 @@ Meteor.startup(function () {
         password: 'teresa',
         email: 'teresa@test.org',
         profile: {
-          fullName: 'Mother Teresa',
+          prefix: 'Mother',
+          given: 'Teresa',
+          family: "",
           role: 'Nurse',
           gender: "Female",
+          dateOfBirth: "1910-08-26",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/mother.teresa.jpg'
         }
           },
@@ -212,9 +239,11 @@ Meteor.startup(function () {
         password: 'octavia',
         email: 'octavia@test.org',
         profile: {
-          fullName: 'Octavia Butler',
+          given: 'Octavia',
+          family: "Butler",
           role: 'Patient',
           gender: "Female",
+          dateOfBirth: "1947-06-22",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/octavia.butler.jpg'
         }
           },
@@ -223,9 +252,11 @@ Meteor.startup(function () {
         password: 'samuel',
         email: 'samuel@test.org',
         profile: {
-          fullName: 'Samuel Clemens',
+          given: 'Samuel',
+          family: "Clemens",
           role: 'Patient',
           gender: "Male",
+          dateOfBirth: "1835-11-30",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/samuel.clemens.jpg'
         }
           },
@@ -234,9 +265,11 @@ Meteor.startup(function () {
         password: 'rosalind',
         email: 'rosalind@test.org',
         profile: {
-          fullName: 'Rosalind Franklin',
+          given: 'Rosalind',
+          family: "Franklin",
           role: 'Laboratory Administrator',
           gender: "Female",
+          dateOfBirth: "1920-07-25",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/rosalind.franklin.jpg'
         }
           },
@@ -245,9 +278,11 @@ Meteor.startup(function () {
         password: 'nicola',
         email: 'nicola@test.org',
         profile: {
-          fullName: 'Nicola Tesla',
+          given: 'Nicola',
+          family: "Tesla",
           role: 'Electrical Engineer',
           gender: "Male",
+          dateOfBirth: "1856-07-10",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/nicola.tesla.jpg'
         }
           },
@@ -256,9 +291,11 @@ Meteor.startup(function () {
         password: 'grace',
         email: 'grace@test.org',
         profile: {
-          fullName: 'Grace Hopper',
+          given: 'Grace',
+          family: "Hopper",
           role: 'Administrator',
           gender: "Female",
+          dateOfBirth: "1906-12-09",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/grace.hopper.jpg'
         }
           },
@@ -267,9 +304,11 @@ Meteor.startup(function () {
         password: 'carl',
         email: 'carl@test.org',
         profile: {
-          fullName: 'Carl Gauss',
+          given: 'Carl',
+          family: "Gauss",
           role: 'MRI Researcher',
           gender: "Male",
+          dateOfBirth: "1777-04-30",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/carl.gauss.jpg'
         }
           },
@@ -278,9 +317,11 @@ Meteor.startup(function () {
         password: 'claude',
         email: 'claude@test.org',
         profile: {
-          fullName: 'Claude Shannon',
+          given: 'Claude',
+          family: "Shannon",
           role: 'Electrical Engineer',
           gender: "Male",
+          dateOfBirth: "1916-04-30",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/claude.shannon.jpg'
         }
           },
@@ -289,9 +330,11 @@ Meteor.startup(function () {
         password: 'barbara',
         email: 'barbara@test.org',
         profile: {
-          fullName: 'Barbara McClintock',
+          given: 'Barbara',
+          family: "McClintock",
           role: 'Cytogeneticist',
           gender: "Female",
+          dateOfBirth: "1902-06-16",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/barbara.mcclintock.jpg'
         }
           },
@@ -300,9 +343,11 @@ Meteor.startup(function () {
         password: 'gertrude',
         email: 'gertrude@test.org',
         profile: {
-          fullName: 'Gertrude Elion',
+          given: 'Gertrude',
+          family: "Elion",
           role: 'Pharmacologist',
           gender: "Female",
+          dateOfBirth: "1918-01-23",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/gertrude.elion.jpg'
         }
           },
@@ -311,9 +356,11 @@ Meteor.startup(function () {
         password: 'rachel',
         email: 'rachel@test.org',
         profile: {
-          fullName: 'Rachel Carson',
+          given: 'Rachel',
+          family: "Carson",
           role: 'Patient',
           gender: "Female",
+          dateOfBirth: "1907-05-27",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/rachel.carson.jpg'
         }
           },
@@ -322,9 +369,11 @@ Meteor.startup(function () {
         password: 'maria',
         email: 'maria@test.org',
         profile: {
-          fullName: 'Maria Mayer',
+          given: 'Maria',
+          family: "Mayer",
           role: 'Nuclear Physicist',
           gender: "Female",
+          dateOfBirth: "1906-06-28",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/maria.mayer.jpg'
         }
           },
@@ -333,9 +382,11 @@ Meteor.startup(function () {
         password: 'rita',
         email: 'rita@test.org',
         profile: {
-          fullName: 'Rita Levi-Montalcini',
+          given: 'Rita',
+          family: "Levi-Montalcini",
           role: 'Neurologist',
           gender: "Female",
+          dateOfBirth: "1909-04-22",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/rita.levi.montalcini.jpg'
         }
           },
@@ -344,9 +395,11 @@ Meteor.startup(function () {
         password: 'elizabeth',
         email: 'elizabeth@test.org',
         profile: {
-          fullName: 'Elizabeth Blackwell',
+          given: 'Elizabeth',
+          family: "Blackwell",
           role: 'Physician',
           gender: "Female",
+          dateOfBirth: "1821-02-03",
           avatar: '/packages/clinical_accounts-famous-dead-people/avatars/elizabeth.blackwell.jpg'
         }
           }
@@ -357,17 +410,38 @@ Meteor.startup(function () {
       if ((Patients.find().count() === 0) || (process.env.ADDITIONAL)) {
         var patientId;
         users.forEach(function(user){
-          patientId = Patients.insert({
-            name: [{
-              text: user.profile.fullName
-            }],
-            active: true,
-            gender: user.profile.gender,
-            photo: [{
-              url: user.profile.avatar
-            }]
-          });
-          console.info('Patient created: ' + userId);
+          
+          if(Patients.findOne({username: user.username}).count() === 0){
+            var fullName = "";
+            if(user.profile.prefix){
+              fullName = user.profile.prefix;
+            }
+            if(user.profile.given){
+              fullName = fullName + " " + user.profile.given;
+            }
+            if(user.profile.family){
+              fullName = fullName + " " + user.profile.family;
+            }
+        
+            patientId = Patients.insert({
+              name: [{
+                text: fullName,
+                given: user.profile.given,
+                family: user.profile.family
+              }],
+              active: true,
+              gender: user.profile.gender,
+              birthDate: new Date(user.profile.dateOfBirth),
+              photo: [{
+                url: user.profile.avatar
+              }]
+            });
+            console.info('Patient created: ' + userId);
+          } else {
+            console.log('Patient already exists.  Skipping.');
+          }
+        
+          
         });
       } else {
         console.log('Looks like there are already Patients initialized.  Skipping.');
