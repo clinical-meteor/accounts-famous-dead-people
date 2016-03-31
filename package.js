@@ -1,13 +1,7 @@
 Package.describe({
   summary: "Adds famous dead people to the Meteor.users collection.",
-
-  // update this value before you run 'meteor publish'
-  version: "1.3.0",
-
-  // if this value isn't set, meteor will default to the directory name
+  version: "1.4.0",
   name: "clinical:accounts-famous-dead-people",
-
-  // and add this value if you want people to access your code from Atmosphere
   git: "http://github.com/awatson1978/accounts-famous-dead-people.git"
 });
 
