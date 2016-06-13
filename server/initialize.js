@@ -407,49 +407,44 @@ Meteor.startup(function () {
 
 
     if (process.env.Patients) {
+      if ((Patients.find().count() === 0) || (process.env.ADDITIONAL)) {
+        var patientId;
+        users.forEach (function(user){
 
-      var patientId;
-      users.forEach (function(user){
+          if (Patients.find({username: user.username}).count() === 0){
+            var fullName = "";
+            if (user.profile.prefix){
+              fullName = user.profile.prefix;
+            }
+            if (user.profile.given){
+              fullName = fullName + " " + user.profile.given;
+            }
+            if (user.profile.family){
+              fullName = fullName + " " + user.profile.family;
+            }
 
-        if (Patients.find({username: user.username}).count() === 0){
-          var fullName = "";
-          if (user.profile.prefix){
-            fullName = user.profile.prefix;
+            patientId = Patients.insert({
+              name: [{
+                text: fullName,
+                given: [user.profile.given],
+                family: [user.profile.family]
+              }],
+              active: true,
+              gender: user.profile.gender,
+              birthDate: new Date(user.profile.dateOfBirth),
+              photo: [{
+                url: user.profile.avatar
+              }]
+            });
+            console.info('Patient created: ' + patientId);
+          } else {
+            console.log( users.username + ' already exists.  Skipping.');
           }
-          if (user.profile.given){
-            fullName = fullName + " " + user.profile.given;
-          }
-          if (user.profile.family){
-            fullName = fullName + " " + user.profile.family;
-          }
 
-          patientId = Patients.insert({
-            name: [{
-              text: fullName,
-              given: [user.profile.given],
-              family: [user.profile.family]
-            }],
-            active: true,
-            gender: user.profile.gender,
-            birthDate: new Date(user.profile.dateOfBirth),
-            photo: [{
-              url: user.profile.avatar
-            }]
-          });
-          console.info('Patient created: ' + patientId);
-        } else {
-          console.log( users.username + ' already exists.  Skipping.');
-        }
-
-        // if (typeof Patients === "object") {
-        //
-        // } else {
-        //   process.env.DEBUG && console.log('clinical:hl7-resource-patients is not installed.  Try running:');
-        //   process.env.DEBUG && console.log('meteor add clinical:hl7-resource-patients');
-        // }
-
-      });
-
+        });
+      } else {
+        console.log('Looks like there are already Patients initialized.  Skipping.');
+      }
     } else {
       users.forEach( function (user){
         if (Meteor.users.findOne({username: user.username}).count() === 0) {
