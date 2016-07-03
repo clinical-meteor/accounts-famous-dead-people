@@ -447,7 +447,7 @@ Meteor.startup(function () {
       }
     } else {
       users.forEach( function (user){
-        if (Meteor.users.findOne({username: user.username}).count() === 0) {
+        if (Meteor.users.find({username: user.username}).count() === 0) {
           userId = Accounts.createUser(user);
           console.info('User created: ' + userId);
         } else {
