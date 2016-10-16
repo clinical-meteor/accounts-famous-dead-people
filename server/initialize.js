@@ -411,17 +411,18 @@ Meteor.startup(function () {
         var patientId;
         users.forEach (function(user){
 
-          if (Patients.find({username: user.username}).count() === 0){
-            var fullName = "";
-            if (user.profile.prefix){
-              fullName = user.profile.prefix;
-            }
-            if (user.profile.given){
-              fullName = fullName + " " + user.profile.given;
-            }
-            if (user.profile.family){
-              fullName = fullName + " " + user.profile.family;
-            }
+          var fullName = "";
+          if (user.profile.prefix){
+            fullName = user.profile.prefix + " ";
+          }
+          if (user.profile.given){
+            fullName = fullName + user.profile.given + " ";
+          }
+          if (user.profile.family){
+            fullName = fullName + user.profile.family;
+          }
+
+          if (Patients.find({'name.text': fullName}).count() === 0){
 
             patientId = Patients.insert({
               name: [{
@@ -438,7 +439,7 @@ Meteor.startup(function () {
             });
             console.info('Patient created: ' + patientId);
           } else {
-            console.log( users.username + ' already exists.  Skipping.');
+            console.log( fullName + ' already exists.  Skipping.');
           }
 
         });
