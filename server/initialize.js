@@ -407,7 +407,7 @@ Meteor.startup(function () {
 
 
     if (process.env.Patients) {
-      if ((Patients.find().count() === 0) || (process.env.ADDITIONAL)) {
+      //if ((Patients.find().count() === 0) || (process.env.ADDITIONAL)) {
         var patientId;
         users.forEach (function(user){
 
@@ -442,9 +442,9 @@ Meteor.startup(function () {
           }
 
         });
-      } else {
-        console.log('Looks like there are already Patients initialized.  Skipping.');
-      }
+      //} else {
+      //  console.log('Looks like there are already Patients initialized.  Skipping.');
+      //}
     } else {
       users.forEach( function (user){
         if (Meteor.users.find({username: user.username}).count() === 0) {
