@@ -405,7 +405,8 @@ Meteor.startup(function () {
             birthDate: new Date(user.profile.dateOfBirth),
             photo: [{
               url: user.profile.avatar
-            }]
+            }],
+            test: true
           });
           console.info('Patient created: ' + patientId);
         } else {
