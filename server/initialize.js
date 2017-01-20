@@ -394,6 +394,8 @@ Meteor.startup(function () {
 
         if (Patients.find({'name.text': fullName}).count() === 0){
 
+          var medicalRecordNumber = Random.fraction();
+
           patientId = Patients.insert({
             name: [{
               text: fullName,
@@ -405,6 +407,18 @@ Meteor.startup(function () {
             birthDate: new Date(user.profile.dateOfBirth),
             photo: [{
               url: user.profile.avatar
+            }],
+            identifier: [{
+              "use": "usual",
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v2/0203",
+                    "code": "MR"
+                  }
+                ]
+              },
+              "value": medicalRecordNumber.toString().substring(2,9)
             }],
             test: true
           });

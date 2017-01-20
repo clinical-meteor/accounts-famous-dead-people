@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Adds famous dead people to the Meteor.users collection.",
-  version: "1.4.6",
+  version: "1.4.7",
   name: "clinical:accounts-famous-dead-people",
   git: "http://github.com/awatson1978/accounts-famous-dead-people.git"
 });
