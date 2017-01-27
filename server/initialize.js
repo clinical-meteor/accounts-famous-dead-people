@@ -381,8 +381,8 @@ Meteor.methods({
      ];
 
 
-     if (process.env.Patients) {
-       //if ((Patients.find().count() === 0) || (process.env.ADDITIONAL)) {
+    //  if (process.env.Patients) {
+
        var patientId;
        users.forEach (function(user){
 
@@ -433,19 +433,16 @@ Meteor.methods({
          }
 
        });
-       //} else {
-       //  console.log('Looks like there are already Patients initialized.  Skipping.');
-       //}
-     } else {
-       users.forEach( function (user){
-         if (Meteor.users.find({username: user.username}).count() === 0) {
-           userId = Accounts.createUser(user);
-           console.info('User created: ' + userId);
-         } else {
-           console.log( users.username + ' already exists.  Skipping.');
-         }
-       });
-     }
+    //  } else {
+    //    users.forEach( function (user){
+    //      if (Meteor.users.find({username: user.username}).count() === 0) {
+    //        userId = Accounts.createUser(user);
+    //        console.info('User created: ' + userId);
+    //      } else {
+    //        console.log( users.username + ' already exists.  Skipping.');
+    //      }
+    //    });
+    //  }
 
   }
 });
