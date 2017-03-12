@@ -397,11 +397,9 @@ Meteor.methods({
            fullName = fullName + user.profile.family;
          }
 
-         if (Patients.find({'name.text': fullName}).count() === 0){
+         if (Patients.find({'name.text': fullName}).count() === 0){           
 
-           var medicalRecordNumber = Random.fraction();
-
-           patientId = Patients.insert({
+           var newPatient = {
              name: [{
                text: fullName,
                given: [user.profile.given],
@@ -413,20 +411,24 @@ Meteor.methods({
              photo: [{
                url: user.profile.avatar
              }],
-             identifier: [{
-               "use": "usual",
-               "type": {
-                 "coding": [
-                   {
-                     "system": "http://hl7.org/fhir/v2/0203",
-                     "code": "MR"
-                   }
-                 ]
-               },
-               "value": medicalRecordNumber.toString().substring(2,9)
-             }],
+             identifier: [],
              test: true
-           });
+           }
+           newPatient.identifier.push({
+              use : "usual",
+              type : {
+                text : "Medical record number",
+                coding : [ 
+                  {
+                    system : "http://hl7.org/fhir/v2/0203",
+                    code : "MR"
+                  }
+                ]
+              },
+              value : (Math.random() * 10000000).toFixed(0)
+            });
+           patientId = Patients.insert(newPatient);
+
            console.info('Patient created: ' + patientId);
          } else {
            console.log( fullName + ' already exists.  Skipping.');
