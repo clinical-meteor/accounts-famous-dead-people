@@ -22,7 +22,7 @@ Meteor.methods({
            given: 'Ada',
            family: "Lovelace",
            role: 'Administrator',
-           gender: "Female",
+           gender: "female",
            dateOfBirth: "1815-12-10",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/ada.lovelace.jpg'
          }
@@ -34,7 +34,7 @@ Meteor.methods({
            given: 'Alan',
            family: "Turing",
            role: 'Programmer',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "1912-06-23",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/alan.turing.jpg'
          }
@@ -46,7 +46,7 @@ Meteor.methods({
            given: 'Alexis',
            family: "Carrel",
            role: 'Surgeon',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "1873-06-28",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/alexis.carrel.jpg'
          }
@@ -58,7 +58,7 @@ Meteor.methods({
            given: 'Edward',
            family: "Doisy",
            role: 'Chemist',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "1893-11-13",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/edward.doisy.jpg'
          }
@@ -70,7 +70,7 @@ Meteor.methods({
            given: 'Edward',
            family: "Tatum",
            role: 'Chemist',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "1909-12-14",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/edward.tatum.jpg'
          }
@@ -82,7 +82,7 @@ Meteor.methods({
            given: 'Florence',
            family: "Nightingale",
            role: 'Nurse',
-           gender: "Female",
+           gender: "female",
            dateOfBirth: "1820-05-12",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/florence.nightingale.jpg'
          }
@@ -94,7 +94,7 @@ Meteor.methods({
            given: 'Galen',
            family: "Aelius",
            role: 'Physician',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "0130-09-01",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/galen.jpg'
          }
@@ -106,7 +106,7 @@ Meteor.methods({
            given: 'George',
            family: "Beadle",
            role: 'Geneticist',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "1903-10-22",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/george.beadle.jpg'
          }
@@ -118,7 +118,7 @@ Meteor.methods({
            given: 'George',
            family: "Wald",
            role: 'Opthamologist',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "1906-11-18",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/george.wald.jpg'
          }
@@ -130,7 +130,7 @@ Meteor.methods({
            given: 'George Washington',
            family: "Carver",
            role: 'Laboratory Chemist',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "1864-01-01",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/george.washington.carver.jpg'
          }
@@ -142,7 +142,7 @@ Meteor.methods({
            given: 'Hermann',
            family: "Muller",
            role: 'Radiation Technologist',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "1890-12-21",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/hermann.muller.jpg'
          }
@@ -154,7 +154,7 @@ Meteor.methods({
            given: 'James',
            family: "Watson",
            role: 'Geneticist',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "1928-04-06",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/james.watson.jpg'
          }
@@ -167,7 +167,7 @@ Meteor.methods({
            given: 'John',
            family: "Eccles",
            role: 'Neurologist',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "1903-01-27",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/john.eccles.jpg'
          }
@@ -179,7 +179,7 @@ Meteor.methods({
            given: 'Kurt',
            family: "Vonnegut",
            role: 'Patient',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "1922-11-11",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/kurt.vonnegut.jpg'
          }
@@ -192,7 +192,7 @@ Meteor.methods({
            given: 'Marie',
            family: "Curie",
            role: 'Nuclear Physicist',
-           gender: "Female",
+           gender: "female",
            dateOfBirth: "1867-11-07",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/madam.curie.jpg'
          }
@@ -204,7 +204,7 @@ Meteor.methods({
            given: 'Mary',
            family: "Shelley",
            role: 'Patient',
-           gender: "Female",
+           gender: "female",
            dateOfBirth: "1797-08-30",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/mary.shelley.jpg'
          }
@@ -217,7 +217,7 @@ Meteor.methods({
            given: 'Teresa',
            family: 'Calcutta',
            role: 'Nurse',
-           gender: "Female",
+           gender: "female",
            dateOfBirth: "1910-08-26",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/mother.teresa.jpg'
          }
@@ -229,7 +229,7 @@ Meteor.methods({
            given: 'Octavia',
            family: "Butler",
            role: 'Patient',
-           gender: "Female",
+           gender: "female",
            dateOfBirth: "1947-06-22",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/octavia.butler.jpg'
          }
@@ -241,7 +241,7 @@ Meteor.methods({
            given: 'Samuel',
            family: "Clemens",
            role: 'Patient',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "1835-11-30",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/samuel.clemens.jpg'
          }
@@ -253,7 +253,7 @@ Meteor.methods({
            given: 'Rosalind',
            family: "Franklin",
            role: 'Laboratory Administrator',
-           gender: "Female",
+           gender: "female",
            dateOfBirth: "1920-07-25",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/rosalind.franklin.jpg'
          }
@@ -265,7 +265,7 @@ Meteor.methods({
            given: 'Nicola',
            family: "Tesla",
            role: 'Electrical Engineer',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "1856-07-10",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/nicola.tesla.jpg'
          }
@@ -277,7 +277,7 @@ Meteor.methods({
            given: 'Grace',
            family: "Hopper",
            role: 'Administrator',
-           gender: "Female",
+           gender: "female",
            dateOfBirth: "1906-12-09",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/grace.hopper.jpg'
          }
@@ -289,7 +289,7 @@ Meteor.methods({
            given: 'Carl',
            family: "Gauss",
            role: 'MRI Researcher',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "1777-04-30",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/carl.gauss.jpg'
          }
@@ -301,7 +301,7 @@ Meteor.methods({
            given: 'Claude',
            family: "Shannon",
            role: 'Electrical Engineer',
-           gender: "Male",
+           gender: "male",
            dateOfBirth: "1916-04-30",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/claude.shannon.jpg'
          }
@@ -313,7 +313,7 @@ Meteor.methods({
            given: 'Barbara',
            family: "McClintock",
            role: 'Cytogeneticist',
-           gender: "Female",
+           gender: "female",
            dateOfBirth: "1902-06-16",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/barbara.mcclintock.jpg'
          }
@@ -325,7 +325,7 @@ Meteor.methods({
            given: 'Gertrude',
            family: "Elion",
            role: 'Pharmacologist',
-           gender: "Female",
+           gender: "female",
            dateOfBirth: "1918-01-23",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/gertrude.elion.jpg'
          }
@@ -337,7 +337,7 @@ Meteor.methods({
            given: 'Rachel',
            family: "Carson",
            role: 'Patient',
-           gender: "Female",
+           gender: "female",
            dateOfBirth: "1907-05-27",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/rachel.carson.jpg'
          }
@@ -349,7 +349,7 @@ Meteor.methods({
            given: 'Maria',
            family: "Mayer",
            role: 'Nuclear Physicist',
-           gender: "Female",
+           gender: "female",
            dateOfBirth: "1906-06-28",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/maria.mayer.jpg'
          }
@@ -361,7 +361,7 @@ Meteor.methods({
            given: 'Rita',
            family: "Levi-Montalcini",
            role: 'Neurologist',
-           gender: "Female",
+           gender: "female",
            dateOfBirth: "1909-04-22",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/rita.levi.montalcini.jpg'
          }
@@ -373,7 +373,7 @@ Meteor.methods({
            given: 'Elizabeth',
            family: "Blackwell",
            role: 'Physician',
-           gender: "Female",
+           gender: "female",
            dateOfBirth: "1821-02-03",
            avatar: '/packages/clinical_accounts-famous-dead-people/avatars/elizabeth.blackwell.jpg'
          }
@@ -403,7 +403,7 @@ Meteor.methods({
              name: [{
                text: fullName,
                given: [user.profile.given],
-               family: [user.profile.family]
+               family: user.profile.family
              }],
              active: true,
              gender: user.profile.gender,
