@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Adds famous dead people to the Meteor.users collection.",
-  version: "1.5.3",
+  version: "1.5.5",
   name: "clinical:accounts-famous-dead-people",
   git: "http://github.com/awatson1978/accounts-famous-dead-people.git"
 });
@@ -48,7 +48,7 @@ Package.on_use(function (api) {
 
   api.addFiles('server/initialize.js', 'server');
 
-  api.addFiles('lib/Characters.js');
+  api.addFiles('lib/Characters.js', ['server', 'client']);
 
   api.export('Characters');
 
