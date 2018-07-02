@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Adds famous dead people to the Meteor.users collection.",
-  version: "1.5.2",
+  version: "1.5.3",
   name: "clinical:accounts-famous-dead-people",
   git: "http://github.com/awatson1978/accounts-famous-dead-people.git"
 });
@@ -47,5 +47,9 @@ Package.on_use(function (api) {
   api.addFiles('avatars/elizabeth.blackwell.jpg', "client", {isAsset: true});
 
   api.addFiles('server/initialize.js', 'server');
+
+  api.addFiles('lib/Characters.js');
+
+  api.export('Characters');
 
 });
