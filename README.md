@@ -1,9 +1,22 @@
-**accounts-famous-dead-people** is a Meteorite package to populate your Meteor.users() collection with famous dead people.  
+## clinical:accounts-famous-dead-people  
+A Meteorite package to populate your Meteor.users() collection with famous dead people.  
 
+#### Licensing  
+
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+
+#### Integration & Verification Tests
+
+[![CircleCI](https://circleci.com/gh/clinical-meteor/hl7-resource-list/tree/master.svg?style=svg)](https://circleci.com/gh/clinical-meteor/hl7-resource-list/tree/master)
+
+#### API Reference  
+
+This package implements the FHIR List resource schema provided at  [https://www.hl7.org/fhir/list.html](https://www.hl7.org/fhir/list.html).  
+
+#### Screenshot
 
 ![screenshot](https://raw.githubusercontent.com/awatson1978/accounts-famous-dead-people/master/screenshot.png)  
 
-------------------------
 ### Installation
 
 First, install the accounts-famous-dead-people package from the command line, like so:
@@ -20,8 +33,6 @@ INITIALIZE=true Patients=true meteor
 ````
 
 
-
-------------------------
 ### Default User Record Schema  
 
 The user objects are have a fairly simple document schema that looks like the following:
@@ -38,14 +49,11 @@ The user objects are have a fairly simple document schema that looks like the fo
 }
 ````
 
-------------------------
 ### Default Usernames and Passwords  
 
 Usernames and passwords for all the users should be the same.  For the most part, the username and password will both be the person's first name, but a number of users are set as the last name.  All emails will be at the ``test.org`` domain.
 
 
-
-------------------------
 ### Users List
 
 Ada Lovelace  
@@ -82,7 +90,6 @@ Rita Levi Montalcini
 Elizabeth Blackwell  
 
 
-------------------------
 ### Example Usage  
 
 ````html
@@ -107,7 +114,6 @@ if (Meteor.isServer) {
 }
 ````
 
-------------------------
 ### License
 
 ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
