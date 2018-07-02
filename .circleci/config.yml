@@ -10,7 +10,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/clinical-meteor/hl7-resource-allergy-intolerance
+    working_directory: ~/clinical-meteor/accounts-famous-dead-people
     parallelism: 1
     shell: /bin/bash --login
 
@@ -108,14 +108,14 @@ jobs:
 
     - run: cd ../baseline && meteor npm install
     - run: cd ../baseline && meteor npm install react
-    - run: cd ../baseline && mkdir packages && cd packages && mkdir hl7-resource-allergy-intolerance
-    - run: cp -R ./* ../baseline/packages/hl7-resource-allergy-intolerance
-    - run: cd ../baseline/packages/hl7-resource-allergy-intolerance && pwd
+    - run: cd ../baseline && mkdir packages && cd packages && mkdir accounts-famous-dead-people
+    - run: cp -R ./* ../baseline/packages/accounts-famous-dead-people
+    - run: cd ../baseline/packages/accounts-famous-dead-people && pwd
     - run: cd ../baseline/packages && ls -la
 
     - run: cd ../baseline && npm i --save-dev selenium-webdriver@3.0.0-beta-2 chromedriver
     - run: cd ../baseline && meteor add dispatch:mocha practicalmeteor:chai
-    - run: cd ../baseline && meteor add clinical:hl7-resource-allergy-intolerance 
+    - run: cd ../baseline && meteor add clinical:accounts-famous-dead-people 
     - run: cd ../baseline && mkdir imports 
     - run: cp tests/FamousDeadPeople.tests.js ../baseline/imports/
 
