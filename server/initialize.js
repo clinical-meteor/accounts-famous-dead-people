@@ -1,3 +1,7 @@
+import { get } from 'lodash';
+
+// import { Patient, Patients, PatientSchema } from 'meteor/clinical:hl7-resource-patient';
+
 // if the database is empty on server start, create some sample data.
 // we create a separate bootstrap.users.js file
 // because we'll be wanting to set up a number of patient-scenario test users
@@ -427,7 +431,15 @@ Meteor.methods({
               },
               value : (Math.random() * 10000000).toFixed(0)
             });
-           patientId = Patients.insert(newPatient);
+          
+           console.log('newPatient', newPatient)
+           patientId = Patients.insert(newPatient, {
+            validate: get(Meteor, 'settings.public.defaults.schemas.validate', false), 
+            filter: get(Meteor, 'settings.public.defaults.schemas.filter', false), 
+            removeEmptyStrings: get(Meteor, 'settings.public.defaults.schemas.removeEmptyStrings', false)
+           }, function(error){
+             console.log('error', error)
+           });
 
            console.info('Patient created: ' + patientId);
          } else {

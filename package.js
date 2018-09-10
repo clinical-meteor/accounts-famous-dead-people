@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Adds famous dead people to the Meteor.users collection.",
-  version: "1.5.6",
+  version: "1.5.7",
   name: "clinical:accounts-famous-dead-people",
   git: "http://github.com/awatson1978/accounts-famous-dead-people.git"
 });
@@ -11,6 +11,8 @@ Package.on_use(function (api) {
   api.use('ecmascript@0.9.0');
   api.use('accounts-base@1.1.3');
   api.use('accounts-password@1.0.5');
+
+  // api.use('clinical:hl7-resource-patient@3.4.6');
 
   api.addFiles('avatars/ada.lovelace.jpg', "client", {isAsset: true});
   api.addFiles('avatars/alan.turing.jpg', "client", {isAsset: true});
