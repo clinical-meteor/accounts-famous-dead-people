@@ -56,3 +56,9 @@ Package.on_use(function (api) {
   api.export('Characters');
 
 });
+
+
+Npm.depends({
+  "moment": "2.22.2",
+  "lodash": "4.17.4"
+})
