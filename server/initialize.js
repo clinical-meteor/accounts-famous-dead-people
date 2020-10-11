@@ -1,4 +1,5 @@
 import { get } from 'lodash';
+import faker from 'faker';
 
 // import { Patient, Patients, PatientSchema } from 'meteor/clinical:hl7-resource-patient';
 
@@ -403,11 +404,20 @@ Meteor.methods({
 
          if (Patients.find({'name.text': fullName}).count() === 0){           
 
-           var newPatient = {
+          let streetAddress = faker.address.streetAddress() + ' ' + faker.address.streetName() + ' ' + faker.address.streetSuffix();
+          
+          var newPatient = {
              name: [{
                text: fullName,
                given: [user.profile.given],
                family: user.profile.family
+             }],
+             address: [{
+              line: [ streetAddress ],
+              city: faker.address.city(),
+              state: faker.address.stateAbbr(),
+              postalCode: faker.address.zipCode(),
+              country: 'USA'
              }],
              active: true,
              gender: user.profile.gender,
@@ -415,7 +425,24 @@ Meteor.methods({
              photo: [{
                url: user.profile.avatar
              }],
+             maritalStatus: [{
+               text: 'unknown',
+               coding: [{
+                code: 'UNK',
+                display: "unknown"
+              }]
+             }],
              identifier: [],
+             communication: [{
+              preferred: true,
+              language: {
+                text: "English (United States)",
+                coding: [{
+                  code: 'en-US',
+                  display: "English (United States)"
+                }]
+              }
+             }],
              test: true
            }
            newPatient.identifier.push({

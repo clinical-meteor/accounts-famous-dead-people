@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Adds famous dead people to the Meteor.users collection.",
-  version: "1.5.7",
+  version: "1.5.9",
   name: "clinical:accounts-famous-dead-people",
   git: "http://github.com/awatson1978/accounts-famous-dead-people.git"
 });
@@ -60,5 +60,6 @@ Package.on_use(function (api) {
 
 Npm.depends({
   "moment": "2.22.2",
-  "lodash": "4.17.4"
+  "lodash": "4.17.4",
+  "faker": "5.1.0"
 })
