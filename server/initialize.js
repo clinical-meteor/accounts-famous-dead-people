@@ -1,5 +1,6 @@
 import { get } from 'lodash';
 import faker from 'faker';
+import { Random } from 'meteor/random';
 
 // import { Patient, Patients, PatientSchema } from 'meteor/clinical:hl7-resource-patient';
 
@@ -8,7 +9,7 @@ import faker from 'faker';
 // because we'll be wanting to set up a number of patient-scenario test users
 
 Meteor.startup(function () {
-  if (process.env.INITIALIZE) {
+  if (process.env.INITIALIZE || get(Meteor, 'settings.private.initializePatients')) {
     Meteor.call("initializeFamousDeadPeople");
   }
 });
@@ -407,6 +408,7 @@ Meteor.methods({
           let streetAddress = faker.address.streetAddress() + ' ' + faker.address.streetName() + ' ' + faker.address.streetSuffix();
           
           var newPatient = {
+             id: Random.id(),
              name: [{
                text: fullName,
                given: [user.profile.given],
