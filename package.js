@@ -12,7 +12,7 @@ Package.on_use(function (api) {
   api.use('ecmascript@0.13.0');
   api.use('meteor-base@1.4.0');
 
-  api.use('clinical:hl7-fhir-data-infrastructure');
+  api.use('clinical:hl7-fhir-data-infrastructure@6.14.2');
 
   api.addFiles('avatars/ada.lovelace.jpg', "client", {isAsset: true});
   api.addFiles('avatars/alan.turing.jpg', "client", {isAsset: true});
