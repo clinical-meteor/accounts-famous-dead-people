@@ -403,78 +403,92 @@ Meteor.methods({
            fullName = fullName + user.profile.family;
          }
 
-         if (Patients.find({'name.text': fullName}).count() === 0){           
 
-          let streetAddress = faker.address.streetAddress() + ' ' + faker.address.streetName() + ' ' + faker.address.streetSuffix();
+         let streetAddress = faker.address.streetAddress() + ' ' + faker.address.streetName() + ' ' + faker.address.streetSuffix();
           
-          var newPatient = {
-             id: Random.id(),
-             name: [{
-               text: fullName,
-               given: [user.profile.given],
-               family: user.profile.family
-             }],
-             address: [{
-              line: [ streetAddress ],
-              city: faker.address.city(),
-              state: faker.address.stateAbbr(),
-              postalCode: faker.address.zipCode(),
-              country: 'USA'
-             }],
-             active: true,
-             gender: user.profile.gender,
-             birthDate: new Date(user.profile.dateOfBirth),
-             photo: [{
-               url: user.profile.avatar
-             }],
-             maritalStatus: [{
-               text: 'unknown',
+         var newPatient = {
+            id: Random.id(),
+            name: [{
+              text: fullName,
+              given: [user.profile.given],
+              family: user.profile.family
+            }],
+            address: [{
+             line: [ streetAddress ],
+             city: faker.address.city(),
+             state: faker.address.stateAbbr(),
+             postalCode: faker.address.zipCode(),
+             country: 'USA'
+            }],
+            active: true,
+            gender: user.profile.gender,
+            birthDate: new Date(user.profile.dateOfBirth),
+            photo: [{
+              url: user.profile.avatar
+            }],
+            maritalStatus: [{
+              text: 'unknown',
+              coding: [{
+               code: 'UNK',
+               display: "unknown"
+             }]
+            }],
+            identifier: [],
+            communication: [{
+             preferred: true,
+             language: {
+               text: "English (United States)",
                coding: [{
-                code: 'UNK',
-                display: "unknown"
-              }]
-             }],
-             identifier: [],
-             communication: [{
-              preferred: true,
-              language: {
-                text: "English (United States)",
-                coding: [{
-                  code: 'en-US',
-                  display: "English (United States)"
-                }]
-              }
-             }],
-             test: true
-           }
-           newPatient.identifier.push({
-              use : "usual",
-              type : {
-                text : "Medical record number",
-                coding : [ 
-                  {
-                    system : "http://hl7.org/fhir/v2/0203",
-                    code : "MR"
-                  }
-                ]
-              },
-              value : (Math.random() * 10000000).toFixed(0)
-            });
-          
-           console.log('newPatient', newPatient)
-           patientId = Patients.insert(newPatient, {
-            validate: get(Meteor, 'settings.public.defaults.schemas.validate', false), 
-            filter: get(Meteor, 'settings.public.defaults.schemas.filter', false), 
-            removeEmptyStrings: get(Meteor, 'settings.public.defaults.schemas.removeEmptyStrings', false)
+                 code: 'en-US',
+                 display: "English (United States)"
+               }]
+             }
+            }],
+            test: true
+          }
+          newPatient.identifier.push({
+            use : "usual",
+            type : {
+              text : "Medical record number",
+              coding : [ 
+                {
+                  system : "http://hl7.org/fhir/v2/0203",
+                  code : "MR"
+                }
+              ]
+            },
+            value : (Math.random() * 10000000).toFixed(0)
+          });
+
+          console.log('newPatient', newPatient)
+
+        if (get(Meteor, 'settings.private.initializePersonsInsteadOfPatients')) {
+          if (Persons.find({'name.text': fullName}).count() === 0){           
+            patientId = Persons.insert(newPatient, {
+             validate: get(Meteor, 'settings.public.defaults.schemas.validate', false), 
+             filter: get(Meteor, 'settings.public.defaults.schemas.filter', false), 
+             removeEmptyStrings: get(Meteor, 'settings.public.defaults.schemas.removeEmptyStrings', false)
            }, function(error){
              console.log('error', error)
            });
-
+           console.info('Person created: ' + patientId);
+          } else {
+            console.log( fullName + ' already exists.  Skipping.');
+          }
+        } else {
+          if (Patients.find({'name.text': fullName}).count() === 0){           
+            patientId = Patients.insert(newPatient, {
+             validate: get(Meteor, 'settings.public.defaults.schemas.validate', false), 
+             filter: get(Meteor, 'settings.public.defaults.schemas.filter', false), 
+             removeEmptyStrings: get(Meteor, 'settings.public.defaults.schemas.removeEmptyStrings', false)
+           }, function(error){
+             console.log('error', error)
+           });
            console.info('Patient created: ' + patientId);
-         } else {
-           console.log( fullName + ' already exists.  Skipping.');
-         }
-
+          } else {
+            console.log( fullName + ' already exists.  Skipping.');
+          }
+        }
        });
     //  } else {
     //    users.forEach( function (user){
